@@ -1,5 +1,5 @@
 import { ADD_PRODUCT, ADD_QUANTITY, REMOVE_QUANTITY } from "./actionType";
-import { initialState } from "./initaiState";
+import { initialState } from "./initialState";
 const nextId = (items) => {
   return items.reduce((id, item) => Math.max(id, item.id), -1) + 1;
 };
@@ -36,7 +36,7 @@ const productReducer = (state = initialState, action) => {
             quantity: product.quantity - 1,
           };
         } else {
-          return state;
+          return product;
         }
       });
     default:

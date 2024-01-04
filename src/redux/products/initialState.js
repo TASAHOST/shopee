@@ -1,0 +1,50 @@
+export const initialState = [
+    {
+      id: 6,
+      image: "https://www.bestworld-safety.com/wp-content/uploads/2020/08/11.10.png",
+      name: "ชะเเลง",
+      category: "Gedgets",
+      price: 199.99,
+      quantity: 50,
+    },{
+      id: 1,
+      image: "https://www.ppemate.com/uat/uploads/images/230207141727rWph.jpg.webp",
+      name: "ไอโม่ง",
+      category: "Clothing",
+      price: 199.99,
+      quantity: 50,
+    },
+
+    {
+        id: 2,
+        image: "https://www.sirasafety.com/wp-content/uploads/2021/12/GLD500BL-1.jpg",
+        name: "ถุงมือผ้า",
+        category: "Clothing",
+        price: 19.99,
+        quantity: 50,
+      },
+     {
+        id: 3,
+        image: "https://fi.lnwfile.com/_/fi/_raw/to/o6/gq.jpg",
+        name: "เสื้อดำ",
+        category: "Clothing",
+        price: 199.99,
+        quantity: 50,
+      },
+      {
+        id: 4,
+        image: "https://filebroker-cdn.lazada.co.th/kf/S16f6aeb335df42488b138df715b0e32ed.jpg",
+        name: "กางเกงลายพาง",
+        category: "Clothing",
+        price: 199.99,
+        quantity: 50,
+      },
+      {
+        id: 5,
+        image: "https://www.samsonite.co.th/dw/image/v2/AAWQ_PRD/on/demandware.static/-/Sites-Samsonite/default/dw457f924e/images/roader-laptop-backpack/hi-res/143264_1276_hi-res_SIDE_3.JPG?sw=500&sh=750",
+        name: "กระเป๋า",
+        category: "Clothing",
+        price: 199.99,
+        quantity: 50,
+      },
+  ];
