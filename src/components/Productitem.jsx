@@ -32,9 +32,9 @@ const Productitem = ({ product }) => {
           <p className="w-full">Available"{quantity}</p>
           <p className="text-left">{price}</p>
         </div>
-        <div className="card-action mt-2">
+        <div className="card-action mt-2 " >
           <button
-            className="btn btn-sm btn-primaty"
+            className="btn btn-sm btn-primary"
             disabled={quantity === 0}
             onClick={handleAddToCart}
           >

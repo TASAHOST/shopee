@@ -42,28 +42,30 @@ const cartReducer = (state = initialState, action) => {
       }
     case REMOVE_FROM_CART:
       return state.filter((p) => p.id !== action.payload) /* ถ้าเงื่อนไขตรงกันจะรีเทินสิงที่เหมือนกันไว้*/ 
-    case INCREASE_QUANTITY:
-        return state.map((product) =>{
-            if (product.Id === action.payload) {
-                return{
+      case INCREASE_QUANTITY:
+        return state.map((product)=>{
+            if(product.id === action.payload){
+                return {
                     ...product,
-                    product: product.quantity  + 1, 
-                };
-            }else {
-                return product
+                    quantity: product.quantity + 1
+                }
+            }
+            else {
+                return product;
             }
         })
-    case DECREASE_QUANTITY:
-        return state.map((product) =>{
-            if (product.Id === action.payload) {
-                return{
-                    ...product,
-                    product: product.quantity  - 1, 
-                };
-            }else {
-                return product
-            }
-        })
+        case DECREASE_QUANTITY:
+          return state.map((product)=>{
+              if(product.id === action.payload){
+                  return {
+                      ...product,
+                      quantity: product.quantity - 1
+                  }
+              }
+              else {
+                  return product;
+              }
+          })
     default:
       return state;
   }

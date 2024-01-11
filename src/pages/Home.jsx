@@ -1,7 +1,7 @@
 import React from "react";
-import AddProduct from "./AddProduct";
+import AddProduct from "../components/AddProduct";
 import { useSelector } from "react-redux";
-import Productitem from "./Productitem";
+import Productitem from "../components/Productitem";
 
 const Home = () => {
   const products = useSelector((state) => state.products); //กดซับproducts เส้นสีฟ้า
